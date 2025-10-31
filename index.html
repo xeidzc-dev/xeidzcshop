@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop by Xeidzc - Discord Tools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fab fa-discord"></i>
+                    <h1>Shop by <span>Xeidzc</span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#payment">Payment</a></li>
+                        <li><a href="#security">Security</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons" id="authButtons">
+                    <button class="btn btn-outline" id="loginBtn">Login</button>
+                    <button class="btn btn-primary" id="registerBtn">Register</button>
+                </div>
+                <div class="user-menu" id="userMenu" style="display: none;">
+                    <span id="userWelcome">Welcome, User!</span>
+                    <button class="btn btn-outline" id="dashboardBtn">Dashboard</button>
+                    <button class="btn btn-primary" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Premium Discord Tools for Enhanced Experience</h2>
+            <p>Get access to powerful Discord tools including Nitro sniping and Token sniping with secure payment system and instant delivery.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="viewProductsBtn">View Products</button>
+                <button class="btn btn-outline" id="learnMoreBtn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>Choose from our premium selection of Discord tools designed to enhance your Discord experience.</p>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Most Popular</div>
+                    <div class="product-image">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Nitro Sniping Tool</h3>
+                        <p>Advanced tool for sniping Discord Nitro gifts with high success rate and fast performance.</p>
+                        <div class="product-price">$6.00</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> High success rate</li>
+                            <li><i class="fas fa-check"></i> Fast performance</li>
+                            <li><i class="fas fa-check"></i> Easy to use</li>
+                            <li><i class="fas fa-check"></i> Regular updates</li>
+                        </ul>
+                        <button class="btn btn-primary buy-btn" data-product="Nitro Sniping Tool" data-price="6.00">Buy Now</button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-badge">Best Value</div>
+                    <div class="product-image">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Token Sniping Tool</h3>
+                        <p>Powerful tool for token sniping with advanced features and secure operation.</p>
+                        <div class="product-price">$4.00</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Advanced features</li>
+                            <li><i class="fas fa-check"></i> Secure operation</li>
+                            <li><i class="fas fa-check"></i> User-friendly interface</li>
+                            <li><i class="fas fa-check"></i> 24/7 support</li>
+                        </ul>
+                        <button class="btn btn-primary buy-btn" data-product="Token Sniping Tool" data-price="4.00">Buy Now</button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">Save 20%</div>
+                    <div class="product-image">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Premium Bundle</h3>
+                        <p>Get both Nitro and Token sniping tools at a discounted price with exclusive features.</p>
+                        <div class="product-price">$8.00</div>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Both tools included</li>
+                            <li><i class="fas fa-check"></i> Exclusive features</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Lifetime updates</li>
+                        </ul>
+                        <button class="btn btn-primary buy-btn" data-product="Premium Bundle" data-price="8.00">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment" id="payment">
+        <div class="container">
+            <div class="section-title">
+                <h2>Secure Payment</h2>
+                <p>We offer multiple secure payment methods to ensure a safe and convenient shopping experience.</p>
+            </div>
+            <div class="payment-content">
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <i class="fab fa-paypal"></i>
+                        <span>PayPal</span>
+                    </div>
+                    <div class="payment-method">
+                        <i class="fab fa-cc-visa"></i>
+                        <span>Credit Card</span>
+                    </div>
+                    <div class="payment-method">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <span>Mastercard</span>
+                    </div>
+                </div>
+                <p>All payments are processed securely through our encrypted payment gateway. Your financial information is never stored on our servers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="security" id="security">
+        <div class="container">
+            <div class="section-title">
+                <h2>Security & Safety</h2>
+                <p>We prioritize the security of our customers and their data with multiple layers of protection.</p>
+            </div>
+            <div class="security-grid">
+                <div class="security-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Payments</h3>
+                    <p>All transactions are encrypted and processed through secure payment gateways.</p>
+                </div>
+                <div class="security-item">
+                    <i class="fas fa-lock"></i>
+                    <h3>Data Protection</h3>
+                    <p>Your personal information is protected with industry-standard security measures.</p>
+                </div>
+                <div class="security-item">
+                    <i class="fas fa-download"></i>
+                    <h3>Instant Delivery</h3>
+                    <p>Products are delivered instantly after payment confirmation via secure download links.</p>
+                </div>
+                <div class="security-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our support team is available around the clock to assist with any issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Shop by Xeidzc</h3>
+                    <p>Providing premium Discord tools with secure payment and instant delivery since 2023.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#products">Nitro Sniping Tool</a></li>
+                        <li><a href="#products">Token Sniping Tool</a></li>
+                        <li><a href="#products">Premium Bundle</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="mailto:xeidzc@gmail.com">Contact Us</a></li>
+                        <li><a href="#security">FAQ</a></li>
+                        <li><a href="#security">Terms of Service</a></li>
+                        <li><a href="#security">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> xeidzc@gmail.com</li>
+                        <li><i class="fab fa-discord"></i> Xeidzc#1234</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Shop by Xeidzc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeLoginModal">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" class="form-control" placeholder="Enter your password" required>
+                </div>
+                <div class="modal-buttons">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-outline" id="closeLoginBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeRegisterModal">&times;</span>
+            <h2>Create an Account</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerUsername">Username</label>
+                    <input type="text" id="registerUsername" name="username" class="form-control" placeholder="Choose a username" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" name="password" class="form-control" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirm Password</label>
+                    <input type="password" id="registerConfirmPassword" name="confirm_password" class="form-control" placeholder="Confirm your password" required>
+                </div>
+                <div class="modal-buttons">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                    <button type="button" class="btn btn-outline" id="closeRegisterBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closePaymentModal">&times;</span>
+            <h2>Complete Your Purchase</h2>
+            <div id="paymentDetails">
+                <p>Product: <span id="selectedProduct"></span></p>
+                <p>Price: $<span id="selectedPrice"></span></p>
+            </div>
+            <form id="paymentForm">
+                <input type="hidden" id="paymentProduct" name="product">
+                <input type="hidden" id="paymentAmount" name="amount">
+                <div class="form-group">
+                    <label for="paymentEmail">Email</label>
+                    <input type="email" id="paymentEmail" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod" name="payment_method" class="form-control" required>
+                        <option value="">Select payment method</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="creditcard">Credit Card</option>
+                    </select>
+                </div>
+                <div id="paypalFields" style="display: none;">
+                    <div class="form-group">
+                        <label for="paypalEmail">PayPal Email</label>
+                        <input type="email" id="paypalEmail" name="paypal_email" class="form-control" placeholder="Enter your PayPal email">
+                    </div>
+                </div>
+                <div id="creditCardFields" style="display: none;">
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" name="card_number" class="form-control" placeholder="Enter card number">
+                    </div>
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" id="expiryDate" name="expiry_date" class="form-control" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" class="form-control" placeholder="CVV">
+                    </div>
+                </div>
+                <div class="modal-buttons">
+                    <button type="submit" class="btn btn-primary">Pay Now</button>
+                    <button type="button" class="btn btn-outline" id="closePaymentBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeSuccessModal">&times;</span>
+            <div style="text-align: center; padding: 20px;">
+                <i class="fas fa-check-circle" style="font-size: 4rem; color: var(--secondary); margin-bottom: 20px;"></i>
+                <h2>Payment Successful!</h2>
+                <p>Thank you for your purchase. Your product will be delivered shortly.</p>
+                <div id="downloadLinks" style="margin: 30px 0;">
+                    <p>Download your product:</p>
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
+                        <a href="https://drive.google.com/drive/folders/1PrpEFdNw9Z_kvRZmmw1df-zwgkG9TzcA?usp=drive_link" class="btn btn-primary" target="_blank">Download Nitro Sniping Tool</a>
+                        <a href="https://drive.google.com/drive/folders/1BQpFlbfBY-S57j_-1Vw0ueAWcCJM49QV?usp=drive_link" class="btn btn-primary" target="_blank">Download Token Sniping Tool</a>
+                    </div>
+                </div>
+                <button class="btn btn-outline" id="closeSuccessBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
